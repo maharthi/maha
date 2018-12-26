@@ -1,0 +1,11 @@
+ChromeDriver=C:\\Users\\User\\Desktop\\AUtomation\\GeckoDriver\\chromedriver.exe
+
+Driver : webdriver.chrome.driver
+
+URL=http://172.168.10.56/Headend315/sms/upload/admin/
+
+URL1=http://172.168.10.56/Headend315/sms/upload/admin/
+
+ExcelPath=C:\\Users\\User\\Desktop\\Workspce\\SMS_AUTOMATION_FRAMEWORK 1.0\\SmsTestData\\SmsUserInputNew.xlsx
+
+Upload =C:\\Users\\User\\Desktop\\Workspce\\SMS_AUTOMATION_FRAMEWORK 1.0\\Upload_Files\\StbInventorySampleFormat.csv

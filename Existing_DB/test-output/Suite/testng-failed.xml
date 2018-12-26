@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.nvod.Edit_nvod">
+        <methods>
+          <include name="Validate_Nvod_Edit_With_duplicate_data"/>
+          <include name="Nvod_Edit"/>
+          <include name="Validate_Nvod_Edit_Without_mandatory_data"/>
+          <include name="Validate_Nvod_Edit_With_invalid_data"/>
+          <include name="validtest"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.nvod.Edit_nvod -->
+      <class name="test.ppv.Edit_ppv">
+        <methods>
+          <include name="edit_new_ppv_with_cancel"/>
+          <include name="edit_new_ppv_with_invalid_price"/>
+          <include name="edit_new_ppv_with_empty_price"/>
+          <include name="TestOnFail"/>
+          <include name="edit_new_ppv_with_valid_price"/>
+          <include name="page_navigation_link"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.ppv.Edit_ppv -->
+      <class name="test.quick_search.quick_search">
+        <methods>
+          <include name="Verify_Get_details_by_selecting_search_criteria_Customer_Name_and_by_giving_valid_input"/>
+          <include name="Verify_pagination_in_Search_page"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_STB_NO_and_by_giving_valid_input"/>
+          <include name="teardown"/>
+          <include name="Verify_search_criteria_drop_down_options"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_address_and_by_giving_valid_input"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_Customer_No_and_by_giving_valid_input"/>
+          <include name="search_by_invalid_data"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_mobile_no_and_by_giving_valid_input"/>
+          <include name="validtest"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_operator_and_by_giving_valid_input"/>
+        </methods>
+      </class> <!-- test.quick_search.quick_search -->
+      <class name="test.customer_region.Customer_Region_Add_Edit">
+        <methods>
+          <include name="Set_Default_for_multiple_Customer_Region"/>
+          <include name="edit_Customer_Region_duplicate_values_Region_Name"/>
+          <include name="edit_Customer_Region_without_Country_Name"/>
+          <include name="Set_Default_for_no_selection_Customer_Region"/>
+          <include name="Verify_Insert_Customer_Region_without_selecting_Country_Name"/>
+          <include name="Delete_Customer_Region"/>
+          <include name="Verify_contents_of_customer_region"/>
+          <include name="Insert_Customer_Region_invalid_inputs_in_Region_Pin"/>
+          <include name="Verify_Insert_Customer_Region_without_entering_mandatory_fields"/>
+          <include name="Set_Default_in_Customer_Region"/>
+          <include name="Insert_Customer_Region_without_selecting_State_Name"/>
+          <include name="Insert_Customer_Region_for_duplicate_values_of_Region_Name"/>
+          <include name="Insert_Customer_Region_without_entering_Region_Pin"/>
+          <include name="Delete_Customer_Region_without_selecting_value"/>
+          <include name="Insert_Customer_Region_without_selecting_Region_Name"/>
+          <include name="edit_Customer_Region"/>
+          <include name="Delete_Customer_Region_selecting_multiple"/>
+          <include name="edit_Customer_Region_without_mandatory_fields"/>
+          <include name="edit_Customer_Region_invalid_inputs_Region_Name"/>
+          <include name="TestOnFail"/>
+          <include name="Insert_Customer_Region_for_duplicate_values_of_Region_Pin"/>
+          <include name="Insert_Customer_Region_with_invalid_inputs_in_Region_Name"/>
+          <include name="customer_region_creation"/>
+          <include name="edit_Customer_Region_without_Region_Name"/>
+          <include name="validtest"/>
+          <include name="verify_sub_menu_under_sales"/>
+          <include name="edit_Customer_Region_without_State_Name"/>
+        </methods>
+      </class> <!-- test.customer_region.Customer_Region_Add_Edit -->
+      <class name="test.order.PrintPDF">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="PackageUrl"/>
+          <include name="PDFValidate"/>
+          <include name="CustomerValidate"/>
+          <include name="Cancel"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.order.PrintPDF -->
+      <class name="test.addcustomer.EditCustomer">
+        <methods>
+          <include name="editinvalid"/>
+          <include name="editempty"/>
+          <include name="editduplicate"/>
+          <include name="editvalidcustomer"/>
+          <include name="TestOnFail"/>
+          <include name="editsuccessfull"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.addcustomer.EditCustomer -->
+      <class name="test.addcustomer.Approve">
+        <methods>
+          <include name="Approved1"/>
+          <include name="TestOnFail"/>
+          <include name="WithoutSelectApproved"/>
+          <include name="validtest"/>
+          <include name="Approved"/>
+        </methods>
+      </class> <!-- test.addcustomer.Approve -->
+      <class name="test.order.Create_Order">
+        <methods>
+          <include name="WithoutPayment"/>
+          <include name="TestOnFail"/>
+          <include name="WithoutInstalltion"/>
+          <include name="addvalidprerentalcustomer"/>
+          <include name="InValidCustomer"/>
+          <include name="WithoutInstalltionPayment1"/>
+          <include name="addinvalidcustomer"/>
+          <include name="addvalidcustomer"/>
+          <include name="validtest"/>
+          <include name="CheckOrdertab"/>
+        </methods>
+      </class> <!-- test.order.Create_Order -->
+      <class name="test.addcustomer.AddCustomer">
+        <methods>
+          <include name="emptycustomer"/>
+          <include name="invalidcustomer"/>
+          <include name="addvalidcustomer"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="duplicatecustomer"/>
+        </methods>
+      </class> <!-- test.addcustomer.AddCustomer -->
+      <class name="test.customer_group.Customer_Group_Add_Edit">
+        <methods>
+          <include name="Verify_Delete_in_Customer_Group"/>
+          <include name="Insert_Customer_Group_Name_with_invalid_name"/>
+          <include name="Verify_Set_default_button"/>
+          <include name="Verify_Set_default_button_for_no_selection"/>
+          <include name="Verify_click_on_breadcrumb_Home"/>
+          <include name="validtest"/>
+          <include name="Verify_Customer_Group_sub_menu_option"/>
+          <include name="Edit_Customer_Group_with_valid_input"/>
+          <include name="Verify_Cancel_in_Customer_Group_Edit_page"/>
+          <include name="Verify_Set_default_button_for_multiple_selection"/>
+          <include name="Insert_Customer_Group"/>
+          <include name="TestOnFail"/>
+          <include name="Verify_Cancel_button_Customer_Group_Insert_page"/>
+          <include name="Insert_Customer_Group_without_entering_mandatory_fields"/>
+          <include name="Verify_Edit_in_Customer_Group_page"/>
+          <include name="Insert_multipleCustomer_Group"/>
+          <include name="Insert_Customer_Group_Name_less_than_3_greater_than_32_characters"/>
+          <include name="Verify_insert_contents"/>
+          <include name="Insert_Customer_Group_Name_with_duplicate_name"/>
+          <include name="Delete_multiple_Customer_group"/>
+          <include name="Insert_in_Customer_Group_without_entering_Customer_Group_Name"/>
+        </methods>
+      </class> <!-- test.customer_group.Customer_Group_Add_Edit -->
+      <class name="test.order.Search_Order">
+        <methods>
+          <include name="InValidSearchOrder"/>
+          <include name="TestOnFail"/>
+          <include name="SearchOrder"/>
+          <include name="ViewOrder"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.order.Search_Order -->
+      <class name="test.ppv.PPV_Addition">
+        <methods>
+          <include name="invalid_new_ppv"/>
+          <include name="adddisableppv"/>
+          <include name="TestOnFail"/>
+          <include name="checking_navigation_to_home_page_from_ppv_insertion"/>
+          <include name="duplicate_event_time_with_same_event_name"/>
+          <include name="addppv"/>
+          <include name="duplicate_new_ppv"/>
+          <include name="checking_navigation_to_home_page"/>
+          <include name="empty_new_ppv"/>
+          <include name="validtest"/>
+          <include name="checking_cancel_insertion_of_ppv"/>
+        </methods>
+      </class> <!-- test.ppv.PPV_Addition -->
+      <class name="test.order.InVoice">
+        <methods>
+          <include name="InVoice_WithoutSelecting"/>
+          <include name="InVoice_WithSelecctingAll"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="InVoice_WithSelecctingSingle"/>
+        </methods>
+      </class> <!-- test.order.InVoice -->
+      <class name="test.addcustomer.MultipleAddress$EditCustomer">
+        <methods>
+          <include name="multipleaddresscustomer"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="deleteaddresscustomer"/>
+        </methods>
+      </class> <!-- test.addcustomer.MultipleAddress$EditCustomer -->
+      <class name="test.nvod.Nvodaddtion">
+        <methods>
+          <include name="addnvod"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_Nvod_Create_With_invalid_data"/>
+          <include name="Validate_Nvod_Create_Without_input"/>
+          <include name="validtest"/>
+          <include name="Validate_Nvod_create_with_duplicate_data"/>
+        </methods>
+      </class> <!-- test.nvod.Nvodaddtion -->
+      <class name="test.addcustomer.SearchOperation">
+        <methods>
+          <include name="CustomerNumber"/>
+          <include name="InvalidSearch"/>
+          <include name="Approverd"/>
+          <include name="Status"/>
+          <include name="STBName"/>
+          <include name="TestOnFail"/>
+          <include name="Date"/>
+          <include name="ByGroup"/>
+          <include name="validtest"/>
+          <include name="CustomerName"/>
+          <include name="OPerator"/>
+        </methods>
+      </class> <!-- test.addcustomer.SearchOperation -->
+      <class name="test.STB_Pairing.STB_Pairing">
+        <methods>
+          <include name="Validate_STB_Pairing_with_Activate_STB"/>
+          <include name="Validate_Last_Page"/>
+          <include name="Validate_STB_Pairing_with_Deactivate_STB"/>
+          <include name="Validate_STB_Pairing_without_STB"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_STB_Pairing_with_Invalid_STB"/>
+          <include name="validtest"/>
+          <include name="Validate_First_Page"/>
+        </methods>
+      </class> <!-- test.STB_Pairing.STB_Pairing -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="test.customer_region.Customer_Region_Add_Edit">
+        <methods>
+          <include name="edit_Customer_Region_without_mandatory_fields"/>
+          <include name="verify_sub_menu_under_sales"/>
+          <include name="TestOnFail"/>
+          <include name="Insert_Customer_Region_for_duplicate_values_of_Region_Pin"/>
+          <include name="Delete_Customer_Region_selecting_multiple"/>
+          <include name="Delete_Customer_Region"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.customer_region.Customer_Region_Add_Edit -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

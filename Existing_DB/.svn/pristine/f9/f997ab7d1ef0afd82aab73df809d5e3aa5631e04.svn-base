@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+    
+ <class name="test.category.insert_category"/>
+ <class name="test.category.edit_category"/>
+
+ <class name="test.broadcaster_group.Create_Broadcaster"/>
+ <class name="test.broadcaster_group.Edit_Broadcaster"/>
+ 
+ <class name="test.channel.Create_channel"/>
+ <class name="test.channel.Edit_channel"/>
+ 
+ <class name="test.customer_group.Customer_Group_Add_Edit"/>
+      
+ <class name="test.customer_region.Customer_Region_Add_Edit"/>
+ <class name="test.addcustomer.AddCustomer"/>
+ <class name="test.addcustomer.Approve"/>
+ <class name="test.addcustomer.EditCustomer"/>
+ <class name="test.addcustomer.MultipleAddress"/>
+ <class name="test.addcustomer.SearchOperation"/>
+ <class name="test.STB_Pairing.STB_Pairing"/>
+	
+<class name="test.quick_search.quick_search"/>
+	
+<class name="test.order.Create_Order"/>
+<class name="test.order.InVoice"/>
+<class name="test.order.PrintPDF"/>
+<class name="test.order.Search_Order"/>
+	
+<class name="test.ppv.PPV_Addition"/>
+ <class name="test.ppv.Edit_ppv"/>
+	 
+<class name="test.nvod.Nvodaddtion"/>
+<class name="test.nvod.Edit_nvod"/>
+	 
+	 
+ 
+ <class name="test.addpackage.Packageaddition"/>
+ <class name="test.addpackage.Edit_packageupdation"/>
+ 
+ <class name="test.taxclass.Taxclass"/>
+  
+ <class name="test.tax_rates.Tax_rates_main"/>
+ <class name="test.tax_rates.Tax_rates_edit"/>
+ 
+ <class name="test.users.Users_Add"/>
+ <class name="test.users.Users_Edit"/>
+ <class name="test.userGroup.UserGroup_Add"/>
+ <class name="test.userGroup.UserGroup_Edit"/>
+ 
+ <class name="test.userCommand.UserCommand_Add_Edit"/>
+  
+ <class name="test.Settings.Edit_Settings"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

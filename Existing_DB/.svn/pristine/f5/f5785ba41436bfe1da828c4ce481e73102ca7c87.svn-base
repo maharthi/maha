@@ -1,0 +1,6 @@
+<h2>Methods that were not run</h2><table>
+<tr><td>test.addcustomer.EditCustomer.editinvalid</td></tr>
+<tr><td>test.addcustomer.EditCustomer.editempty</td></tr>
+<tr><td>test.addcustomer.EditCustomer.editduplicate</td></tr>
+<tr><td>test.addcustomer.EditCustomer.editvalidcustomer</td></tr>
+</table>

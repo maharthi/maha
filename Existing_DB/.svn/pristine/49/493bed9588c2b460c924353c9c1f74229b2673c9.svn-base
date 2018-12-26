@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="test.Settings.Edit_Settings">
+        <methods>
+          <include name="Validate_Edit_Settings"/>
+          <include name="TestOnFail"/>
+          <include name="Empty_Settings_Value"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.Settings.Edit_Settings -->
+      <class name="test.addcustomer.EditCustomer">
+        <methods>
+          <include name="editinvalid"/>
+          <include name="editempty"/>
+          <include name="editduplicate"/>
+          <include name="editvalidcustomer"/>
+          <include name="TestOnFail"/>
+          <include name="editsuccessfull"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.addcustomer.EditCustomer -->
+      <class name="test.order.PrintPDF">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="PackageUrl"/>
+          <include name="PDFValidate"/>
+          <include name="CustomerValidate"/>
+          <include name="Cancel"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.order.PrintPDF -->
+      <class name="test.channel.Edit_channel">
+        <methods>
+          <include name="Validate_Channel_Edit_Without_mandatory_data"/>
+          <include name="Validate_Channel_Edit_With_duplicate_data"/>
+          <include name="TestOnFail"/>
+          <include name="Channel_Edit"/>
+          <include name="Validate_Channel_Edit_With_invalid_data"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.channel.Edit_channel -->
+      <class name="test.category.edit_category">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="Edit_Functionality_of_Parent_Category"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.category.edit_category -->
+      <class name="test.channel.Create_channel">
+        <methods>
+          <include name="Validate_Channel_create_with_duplicate_data"/>
+          <include name="Validate_Channel_Create_Without_input"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_Channel_Create_With_invalid_data"/>
+          <include name="validtest"/>
+          <include name="Channel_Create"/>
+        </methods>
+      </class> <!-- test.channel.Create_channel -->
+      <class name="test.broadcaster_group.Create_Broadcaster">
+        <methods>
+          <include name="Broadcaster_Create"/>
+          <include name="validtest"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.broadcaster_group.Create_Broadcaster -->
+      <class name="test.userGroup.UserGroup_Add">
+        <methods>
+          <include name="Insert_UserGroup_with_Duplicate_data"/>
+          <include name="TestOnFail"/>
+          <include name="Insert_UserGroup_by_Cancelling"/>
+          <include name="Insert_UserGroup_with_Empty_data"/>
+          <include name="Insert_UserGroup_with_Invalid_data"/>
+          <include name="validtest"/>
+          <include name="Insert_UserGroup_with_valid_data"/>
+        </methods>
+      </class> <!-- test.userGroup.UserGroup_Add -->
+      <class name="test.users.Users_Edit">
+        <methods>
+          <include name="Users_Edit_with_Duplicate_Data"/>
+          <include name="Users_Edit_Change_Status_Disabled"/>
+          <include name="Users_Edit_with_by_Clicking_Cancel"/>
+          <include name="Users_Edit_Change_As_TopAdmin"/>
+          <include name="Users_Edit_with_Valid_Data"/>
+          <include name="Users_Edit_with_Empty_Data"/>
+          <include name="Users_Edit_with_Password_Mismatch"/>
+          <include name="validtest"/>
+          <include name="Users_Edit_with_Invalid_Data"/>
+          <include name="Users_Edit_Change_As_Admin"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.users.Users_Edit -->
+      <class name="test.ppv.Edit_ppv">
+        <methods>
+          <include name="edit_new_ppv_with_cancel"/>
+          <include name="edit_new_ppv_with_invalid_price"/>
+          <include name="edit_new_ppv_with_empty_price"/>
+          <include name="TestOnFail"/>
+          <include name="edit_new_ppv_with_valid_price"/>
+          <include name="page_navigation_link"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.ppv.Edit_ppv -->
+      <class name="test.order.Create_Order">
+        <methods>
+          <include name="WithoutPayment"/>
+          <include name="TestOnFail"/>
+          <include name="WithoutInstalltion"/>
+          <include name="addvalidprerentalcustomer"/>
+          <include name="InValidCustomer"/>
+          <include name="WithoutInstalltionPayment1"/>
+          <include name="addinvalidcustomer"/>
+          <include name="addvalidcustomer"/>
+          <include name="validtest"/>
+          <include name="CheckOrdertab"/>
+        </methods>
+      </class> <!-- test.order.Create_Order -->
+      <class name="test.customer_region.Customer_Region_Add_Edit">
+        <methods>
+          <include name="Insert_Customer_Region_for_duplicate_values_of_Region_Name"/>
+          <include name="TestOnFail"/>
+          <include name="Insert_Customer_Region_for_duplicate_values_of_Region_Pin"/>
+          <include name="Delete_Customer_Region_selecting_multiple"/>
+          <include name="Delete_Customer_Region"/>
+          <include name="customer_region_creation"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.customer_region.Customer_Region_Add_Edit -->
+      <class name="test.ppv.PPV_Addition">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="duplicate_event_time_with_same_event_name"/>
+          <include name="addppv"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.ppv.PPV_Addition -->
+      <class name="test.userGroup.UserGroup_Edit">
+        <methods>
+          <include name="Navigate_To_HomePage_check"/>
+          <include name="Edit_UserGroup_with_Invalid_data"/>
+          <include name="Edit_UserGroup_with_Empty_data"/>
+          <include name="Edit_UserGroup_by_Cancelling"/>
+          <include name="Edit_UserGroup_with_Valid_data"/>
+          <include name="validtest"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.userGroup.UserGroup_Edit -->
+      <class name="test.tax_rates.Tax_rates_main">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="Adding_new_tax_rates_with_invalid"/>
+          <include name="Adding_new_tax_rates_with_empty"/>
+          <include name="validtest"/>
+          <include name="add_tax_rate"/>
+        </methods>
+      </class> <!-- test.tax_rates.Tax_rates_main -->
+      <class name="test.broadcaster_group.Edit_Broadcaster">
+        <methods>
+          <include name="Validate_Broadcaster_Edit_Without_mandatory_data"/>
+          <include name="Broadcaster_Edit"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_Broadcaster_Edit_With_invalid_data"/>
+          <include name="Validate_Broadcaster_Edit_With_duplicate_data"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.broadcaster_group.Edit_Broadcaster -->
+      <class name="test.addcustomer.AddCustomer">
+        <methods>
+          <include name="emptycustomer"/>
+          <include name="invalidcustomer"/>
+          <include name="addvalidcustomer"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="duplicatecustomer"/>
+        </methods>
+      </class> <!-- test.addcustomer.AddCustomer -->
+      <class name="test.customer_group.Customer_Group_Add_Edit">
+        <methods>
+          <include name="Insert_Customer_Group"/>
+          <include name="TestOnFail"/>
+          <include name="Verify_Cancel_button_Customer_Group_Insert_page"/>
+          <include name="Insert_Customer_Group_without_entering_mandatory_fields"/>
+          <include name="Insert_multipleCustomer_Group"/>
+          <include name="Insert_Customer_Group_Name_with_duplicate_name"/>
+          <include name="validtest"/>
+          <include name="Delete_multiple_Customer_group"/>
+          <include name="Verify_Customer_Group_sub_menu_option"/>
+        </methods>
+      </class> <!-- test.customer_group.Customer_Group_Add_Edit -->
+      <class name="test.taxclass.Taxclass">
+        <methods>
+          <include name="Create_Tax_Class"/>
+          <include name="Create_Tax_Classes_Without_Mandatory"/>
+          <include name="Edit_Tax_Class"/>
+          <include name="Edit_Tax_Class_Without_Mandatory"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.taxclass.Taxclass -->
+      <class name="test.addcustomer.MultipleAddress$EditCustomer">
+        <methods>
+          <include name="multipleaddresscustomer"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="deleteaddresscustomer"/>
+        </methods>
+      </class> <!-- test.addcustomer.MultipleAddress$EditCustomer -->
+      <class name="test.order.Search_Order">
+        <methods>
+          <include name="InValidSearchOrder"/>
+          <include name="TestOnFail"/>
+          <include name="SearchOrder"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.order.Search_Order -->
+      <class name="test.users.Users_Add">
+        <methods>
+          <include name="TestOnFail"/>
+          <include name="Insert_Users_By_Clicking_Cancel"/>
+          <include name="Insert_Users_With_empty_data"/>
+          <include name="Insert_Users_with_ValidData_Status_Disabled"/>
+          <include name="Insert_Users_With_Invalid_data"/>
+          <include name="Insert_Users_with_ValidData_AsTopAdmin"/>
+          <include name="Navigate_To_Home_Page_Check"/>
+          <include name="Insert_Users_With_Duplicate_data"/>
+          <include name="validtest"/>
+          <include name="Insert_Users_with_ValidData_AsAdmin"/>
+        </methods>
+      </class> <!-- test.users.Users_Add -->
+      <class name="test.addpackage.Packageaddition">
+        <methods>
+          <include name="emptypackageprice"/>
+          <include name="withoutaddingchannels"/>
+          <include name="duplicatepacknumber"/>
+          <include name="emptypackagenumber"/>
+          <include name="invalidpackagenumber"/>
+          <include name="invalidpackageprice"/>
+          <include name="validtest"/>
+          <include name="invalidpackagename"/>
+          <include name="emptypackagesubsprice"/>
+          <include name="TestOnFail"/>
+          <include name="addpack"/>
+          <include name="withoutcateogry"/>
+          <include name="duplicatepackname"/>
+          <include name="emptypackagename"/>
+        </methods>
+      </class> <!-- test.addpackage.Packageaddition -->
+      <class name="test.STB_Pairing.STB_Pairing">
+        <methods>
+          <include name="Validate_STB_Pairing_with_Activate_STB"/>
+          <include name="Validate_Last_Page"/>
+          <include name="Validate_STB_Pairing_with_Deactivate_STB"/>
+          <include name="Validate_STB_Pairing_without_STB"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_STB_Pairing_with_Invalid_STB"/>
+          <include name="validtest"/>
+          <include name="Validate_First_Page"/>
+        </methods>
+      </class> <!-- test.STB_Pairing.STB_Pairing -->
+      <class name="test.quick_search.quick_search">
+        <methods>
+          <include name="Verify_Get_details_by_selecting_search_criteria_Customer_Name_and_by_giving_valid_input"/>
+          <include name="Verify_pagination_in_Search_page"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_STB_NO_and_by_giving_valid_input"/>
+          <include name="teardown"/>
+          <include name="Verify_search_criteria_drop_down_options"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_address_and_by_giving_valid_input"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_Customer_No_and_by_giving_valid_input"/>
+          <include name="search_by_invalid_data"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_mobile_no_and_by_giving_valid_input"/>
+          <include name="validtest"/>
+          <include name="Verify_Get_details_by_selecting_search_criteria_operator_and_by_giving_valid_input"/>
+        </methods>
+      </class> <!-- test.quick_search.quick_search -->
+      <class name="test.addpackage.Edit_packageupdation">
+        <methods>
+          <include name="editpriceofpackage"/>
+          <include name="editofpackagewithremovingsubscription"/>
+          <include name="editofpackagewithemptycateogry"/>
+          <include name="TestOnFail"/>
+          <include name="edit_pack_inclusion"/>
+          <include name="editinvalidpriceofpackage"/>
+          <include name="validtest"/>
+          <include name="editpriceofpackagewithempty"/>
+        </methods>
+      </class> <!-- test.addpackage.Edit_packageupdation -->
+      <class name="test.nvod.Nvodaddtion">
+        <methods>
+          <include name="addnvod"/>
+          <include name="TestOnFail"/>
+          <include name="Validate_Nvod_Create_With_invalid_data"/>
+          <include name="Validate_Nvod_Create_Without_input"/>
+          <include name="validtest"/>
+          <include name="Validate_Nvod_create_with_duplicate_data"/>
+        </methods>
+      </class> <!-- test.nvod.Nvodaddtion -->
+      <class name="test.addcustomer.SearchOperation">
+        <methods>
+          <include name="CustomerNumber"/>
+          <include name="InvalidSearch"/>
+          <include name="Approverd"/>
+          <include name="Status"/>
+          <include name="STBName"/>
+          <include name="TestOnFail"/>
+          <include name="Date"/>
+          <include name="ByGroup"/>
+          <include name="validtest"/>
+          <include name="CustomerName"/>
+          <include name="OPerator"/>
+        </methods>
+      </class> <!-- test.addcustomer.SearchOperation -->
+      <class name="test.tax_rates.Tax_rates_edit">
+        <methods>
+          <include name="edit_new_tax_rates_with_empty"/>
+          <include name="edit_new_tax_rates_with_invalid"/>
+          <include name="edit_new_tax_rates_with_valid"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.tax_rates.Tax_rates_edit -->
+      <class name="test.addcustomer.Approve">
+        <methods>
+          <include name="Approved1"/>
+          <include name="TestOnFail"/>
+          <include name="WithoutSelectApproved"/>
+          <include name="validtest"/>
+          <include name="Approved"/>
+        </methods>
+      </class> <!-- test.addcustomer.Approve -->
+      <class name="test.userCommand.UserCommand_Add_Edit">
+        <methods>
+          <include name="Edit_UserCmdPermission_UnselectAll"/>
+          <include name="Insert_User_PermissionCmd_By_Cancel"/>
+          <include name="Insert_New_UserCommand_Valid"/>
+          <include name="Delete_userPermisson_without_selecting"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+          <include name="Delete_TwoUser"/>
+        </methods>
+      </class> <!-- test.userCommand.UserCommand_Add_Edit -->
+      <class name="test.nvod.Edit_nvod">
+        <methods>
+          <include name="Validate_Nvod_Edit_With_duplicate_data"/>
+          <include name="Nvod_Edit"/>
+          <include name="Validate_Nvod_Edit_Without_mandatory_data"/>
+          <include name="Validate_Nvod_Edit_With_invalid_data"/>
+          <include name="validtest"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.nvod.Edit_nvod -->
+      <class name="test.category.insert_category">
+        <methods>
+          <include name="Add_Category_With_Disabled_Status"/>
+          <include name="Add_Category"/>
+          <include name="Add_Category_With_Parent"/>
+          <include name="Special_Character_in_Column_method"/>
+          <include name="Cancel_functionality"/>
+          <include name="validtest"/>
+          <include name="TestOnFail"/>
+        </methods>
+      </class> <!-- test.category.insert_category -->
+      <class name="test.order.InVoice">
+        <methods>
+          <include name="InVoice_WithSelecctingAll"/>
+          <include name="TestOnFail"/>
+          <include name="validtest"/>
+        </methods>
+      </class> <!-- test.order.InVoice -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

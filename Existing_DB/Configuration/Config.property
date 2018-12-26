@@ -1,0 +1,11 @@
+ChromeDriver=E:\\ps\\VEPLSMS\\ChormeDriver_File_For_Configuration\\chromedriver_win32_1\\chromedriver.exe
+
+Driver : webdriver.chrome.driver
+
+URL=http://172.168.10.56/Headend316/sms/upload/admin/
+
+URL1=http://172.168.10.56/Headend315/sms/upload/admin/
+
+ExcelPath=C:\\Users\\Mahalakshmi\\Desktop\\Existing_DB\\SmsTestData\\SmsUserInputNew.xlsx
+
+Upload =C:\\Users\\Mahalakshmi\\Desktop\\Existing_DB\\Upload_Files\\StbInventorySampleFormat.csv
